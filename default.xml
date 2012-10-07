@@ -6,6 +6,9 @@
 
   <remote  name="sn"
            fetch="https://github.com/SuperNexus/" />
+           
+  <remote  name="github"
+           fetch="https://github.com/" />
 
   <project path="build" name="android_build" remote="sn" revision="jellybean" >
     <copyfile src="core/root.mk" dest="Makefile" />
@@ -18,24 +21,16 @@
   <project path="cts" name="platform/cts" remote="aosp" revision="refs/tags/android-4.1.1_r6" />
   <project path="dalvik" name="android_dalvik" remote="sn" revision="jellybean" />
   <project path="development" name="platform/development" remote="aosp" revision="refs/tags/android-4.1.1_r6" />
-  <project path="device/asus/grouper" name="device/asus/grouper" remote="aosp" revision="refs/tags/android-4.1.1_r6" />
   <project path="device/common" name="device/common" remote="aosp" revision="refs/tags/android-4.1.1_r6" />
   <project path="device/generic/armv7-a-neon" name="device/generic/armv7-a-neon" remote="aosp" revision="refs/tags/android-4.1.1_r6" />
   <project path="device/generic/armv7-a" name="device/generic/armv7-a" remote="aosp" revision="refs/tags/android-4.1.1_r6" />
   <project path="device/generic/goldfish" name="device/generic/goldfish" remote="aosp" revision="refs/tags/android-4.1.1_r6" />
   <project path="device/google/accessory/arduino" name="device/google/accessory/arduino" remote="aosp" revision="refs/tags/android-4.1.1_r6" />
   <project path="device/google/accessory/demokit" name="device/google/accessory/demokit" remote="aosp" revision="refs/tags/android-4.1.1_r6" />
-  <project path="device/moto/common" name="device/moto/common" remote="aosp" revision="refs/tags/android-4.1.1_r6" />
-  <project path="device/moto/stingray" name="device/moto/stingray" remote="aosp" revision="refs/tags/android-4.1.1_r6" />
-  <project path="device/moto/wingray" name="device/moto/wingray" remote="aosp" revision="refs/tags/android-4.1.1_r6" />
-  <project path="device/sample" name="device/sample" remote="aosp" revision="refs/tags/android-4.1.1_r6" />
-  <project path="device/samsung/crespo" name="device/samsung/crespo" remote="aosp" revision="refs/tags/android-4.1.1_r6" />
-  <project path="device/samsung/crespo4g" name="device/samsung/crespo4g" remote="aosp" revision="refs/tags/android-4.1.1_r6" />
-  <project path="device/samsung/maguro" name="device/samsung/maguro" remote="aosp" revision="refs/tags/android-4.1.1_r6" />
-  <project path="device/samsung/toro" name="device/samsung/toro" remote="aosp" revision="refs/tags/android-4.1.1_r6" />
-  <project path="device/samsung/torospr" name="device/samsung/torospr" remote="aosp" revision="refs/tags/android-4.1.1_r6" />
-  <project path="device/samsung/tuna" name="device/samsung/tuna" remote="aosp" revision="refs/tags/android-4.1.1_r6" />
-  <project path="device/ti/panda" name="device/ti/panda" remote="aosp" revision="refs/tags/android-4.1.1_r6" />
+  <project path="device/samsung/d2-common" name="AOKP/android_device_samsung_d2-common" remote="github" revision="jb" />
+  <project path="device/samsung/d2vzw" name="AOKP/device_samsung_d2vzw" remote="github" revision="jb" />
+  <project path="device/samsung/msm8960-common" name="AOKP/android_device_samsung_msm8960-common" remote="github" revision="jb" />
+  <project path="device/samsung/qcom-common" name="AOKP/device_samsung_qcom-common" remote="github" revision="jb" />
   <project path="docs/source.android.com" name="platform/docs/source.android.com" remote="aosp" revision="refs/tags/android-4.1.1_r6" />
   <project path="external/aac" name="platform/external/aac" remote="aosp" revision="refs/tags/android-4.1.1_r6" />
   <project path="external/android-mock" name="platform/external/android-mock" remote="aosp" revision="refs/tags/android-4.1.1_r6" />
@@ -206,9 +201,12 @@
   <project path="hardware/libhardware" name="android_hardware_libhardware" remote="sn" revision="jellybean" />
   <project path="hardware/libhardware_legacy" name="android_hardware_libhardware_legacy" remote="sn" revision="jellybean" />
   <project path="hardware/msm7k" name="platform/hardware/msm7k" remote="aosp" revision="refs/tags/android-4.1.1_r6" />
-  <project path="hardware/qcom/gps" name="platform/hardware/qcom/gps" remote="aosp" revision="refs/tags/android-4.1.1_r6" />
-  <project path="hardware/qcom/media" name="platform/hardware/qcom/media" remote="aosp" revision="refs/tags/android-4.1.1_r6" />
+  <project path="hardware/qcom/audio" name="CyanogenMod/android_hardware_qcom_audio" remote="github" revision="jellybean" />
+  <project path="hardware/qcom/display" name="CyanogenMod/android_hardware_qcom_display" remote="github" revision="jellybean" />
+  <project path="hardware/qcom/gps" name="CyanogenMod/android_hardware_qcom_gps" remote="github" revision="jellybean" />
+  <project path="hardware/qcom/media" name="CyanogenMod/android_hardware_qcom_media" remote="github" revision="jellybean" />
   <project path="hardware/ril" name="android_hardware_ril" remote="sn" revision="jellybean" />
+  <project path="hardware/samsung" name="CyanogenMod/android_hardware_samsung" remote="github" revision="jellybean" />
   <project path="hardware/ti/omap3" name="platform/hardware/ti/omap3" remote="aosp" revision="refs/tags/android-4.1.1_r6" />
   <project path="hardware/ti/omap4xxx" name="platform/hardware/ti/omap4xxx" remote="aosp" revision="refs/tags/android-4.1.1_r6" />
   <project path="hardware/ti/wlan" name="platform/hardware/ti/wlan" remote="aosp" revision="refs/tags/android-4.1.1_r6" />
@@ -303,5 +301,7 @@
   <project path="system/netd" name="android_system_netd" remote="sn" revision="jellybean" />
   <project path="system/security" name="platform/system/security" remote="aosp" revision="refs/tags/android-4.1.1_r6" />
   <project path="system/vold" name="android_system_vold" remote="sn" revision="jellybean" />
+  <project path="vendor/samsung" name="AOKP/vendor_samsung" remote="github" revision="jb" />
+  <project path="vendor/supernexus" name="PhantomGamers/android_vendor_supernexus" remote="github" revision="jellybean" />
 
 </manifest>
