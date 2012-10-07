@@ -5,7 +5,7 @@
            fetch="https://android.googlesource.com/" />
 
   <remote  name="sn"
-           fetch="https://github.com/supernexus" />
+           fetch="https://github.com/supernexus/" />
 
   <project path="build" name="android_build" remote="sn" revision="jellybean" >
     <copyfile src="core/root.mk" dest="Makefile" />
